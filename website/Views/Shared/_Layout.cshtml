@@ -311,8 +311,7 @@
                                 </p>
                             </div>
                             <div class="fields">
-                                <form action="https://marketifythemes.net/" method="post" class="contact_form"
-                                    id="contact_form" autocomplete="off">
+                                <form asp-controller="Home" asp-action="Index" method="post" class="contact_form">
                                     <div class="returnmessage"
                                         data-success="Your message has been received, We will contact you soon.">
                                     </div>
@@ -320,20 +319,20 @@
                                     <div class="first">
                                         <ul>
                                             <li>
-                                                <input id="name" type="text" placeholder="نام">
+                                                <input type="text" placeholder="نام" name="Username">
                                             </li>
                                             <li>
-                                                <input id="email" type="text" placeholder="پست الکترونیک">
+                                                <input type="text" placeholder="پست الکترونیک" name="Email">
                                             </li>
                                         </ul>
                                     </div>
                                     <div class="last">
-                                        <textarea id="message" placeholder="پیام"></textarea>
+                                        <textarea placeholder="پیام" name="message"></textarea>
                                     </div>
                                     <div class="tokyo_tm_button" data-position="left">
-                                        <a id="send_message" href="#">
+                                        <button type="submit" id="send_message" >
                                             <span>ارسال پیام</span>
-                                        </a>
+                                        </button>
                                     </div>
 
                                 </form>

@@ -12,8 +12,14 @@ namespace website.Controllers
 		{
 			_logger = logger;
 		}
-
+		[HttpGet]
 		public IActionResult Index()
+		{
+			return View();
+		}
+
+		[HttpPost]
+		public IActionResult Index(string Username , string Email , string message)
 		{
 			return View();
 		}
