@@ -311,7 +311,8 @@
                                 </p>
                             </div>
                             <div class="fields">
-                                <form asp-controller="Home" asp-action="Index" method="post" class="contact_form">
+                                <form asp-controller="Home" asp-action="Index" method="post" class="contact_form"
+                                    id="contact_form" autocomplete="off">
                                     <div class="returnmessage"
                                         data-success="Your message has been received, We will contact you soon.">
                                     </div>
@@ -319,15 +320,15 @@
                                     <div class="first">
                                         <ul>
                                             <li>
-                                                <input type="text" placeholder="نام" name="Username">
+                                                <input id="name" type="text" placeholder="نام" name="Username">
                                             </li>
                                             <li>
-                                                <input type="text" placeholder="پست الکترونیک" name="Email">
+                                                <input id="email" type="text" placeholder="پست الکترونیک" name="Email">
                                             </li>
                                         </ul>
                                     </div>
                                     <div class="last">
-                                        <textarea placeholder="پیام" name="message"></textarea>
+                                        <textarea id="message" placeholder="پیام" name="message"></textarea>
                                     </div>
                                     <div class="tokyo_tm_button" data-position="left">
                                         <button type="submit" id="send_message" >
